@@ -1,6 +1,6 @@
 # UNDRERSTANDING LLMS Flexisaf AI Engineering Week2
 
-Tokens and attention are the two foundational ideas inside every transformer. A token is not a word — it is a chunk produced by a subword tokenizer (BPE or similar),
+Tokens and attention are the two foundational ideas inside every transformer. A token is not a word it is a chunk produced by a subword tokenizer (BPE or similar),
 so "unbelievable" might split into ["un", "believ", "able"]. Each token is mapped to a high-dimensional embedding vector, carrying an initial semantic position in a 
 learned space. Attention is then the mechanism by which tokens update those vectors by looking at each other. For each token acting as a query, the model computes a 
 dot product against every other token acting as a key, scales and softmaxes those scores into a probability distribution (the attention weights), and uses them to 
