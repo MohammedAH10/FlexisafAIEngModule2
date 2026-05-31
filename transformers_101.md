@@ -2,11 +2,11 @@
 
 ## Tokens
 
-A token is the atomic unit a language model operates on. Tokenization is not word-splitting —
+A token is the atomic unit a language model operates on. Tokenization is not word-splitting 
 it is a learned subword compression, typically using Byte-Pair Encoding (BPE) or a similar
 algorithm. The vocabulary is fixed at training time (commonly 32k–100k tokens). Each token ID
 is looked up in an embedding matrix to produce a dense vector in R^d (where d is the model
-dimension — e.g. 768, 2048, 4096). A positional encoding is added to this vector so the model
+dimension e.g. 768, 2048, 4096). A positional encoding is added to this vector so the model
 knows where in the sequence each token sits; modern models use Rotary Position Embedding (RoPE)
 or ALiBi rather than the original sinusoidal scheme, because they generalize better to sequence
 lengths not seen during training.
